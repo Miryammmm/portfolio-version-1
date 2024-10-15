@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour démarquer le menu */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; /* Ajuster selon la largeur de la page */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px; /* Ajuster selon la taille du logo */
+    margin-left: 80px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight:bold;
+    color: #622582;
+}
+
+.menu {
+    list-style-type: none; /* Retire les puces de la liste */
+    padding: 0; /* Retire le padding par défaut */
+    display: flex; /* Aligne les éléments du menu horizontalement */
+}
+
+.menu li {
+    margin: 0 20px; /* Espace entre les éléments du menu */
+}
+
+.menu a {
+    text-decoration: none; /* Retire le soulignement du texte */
+    color: #622582; /* Couleur du texte */
+    font-size: 17px; /* Taille de la police */
+    transition: color 0.3s, transform 0.3s; /* Animation pour le changement de couleur et l'effet de transformation */
+}
+
+/* Effet de survol */
+.menu a:hover {
+    color: #D9D9D9; /* Change la couleur du texte lors du survol */
+    transform: scale(1.1); /* Agrandit légèrement l'élément lors du survol */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F3F3F3; /* Fond de la section hero */
+    padding: 50px; /* Espacement autour du contenu */
+    display: flex; /* Alignement horizontal */
+    justify-content: center; /* Centrer le contenu */
+    align-items: center; /* Alignement vertical */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+
+.photo-container {
+    background-color: #7D7D7D; /* Fond gris seulement pour le cercle */
+    border-radius: 50%; /* Arrondir les coins pour le cercle */
+    width: 480px; /* Largeur du cercle */
+    height: auto; /* Hauteur du cercle */
+    display: flex;
+    justify-content: center; /* Centrer la photo */
+    align-items: center; /* Centrer la photo */
+    margin-right: 30px; /* Espacement entre l'image et le texte */
+}
+
+.profile-photo {
+    border-radius: 60%; /* Photo arrondie */
+    width: 480%; /* Ajuste selon la préférence */
+    height: 480; /* Conserve le ratio */
+    box: shadow #d9d9d9;
+    display: flex;
+    overflow: hidden;
+}
+
+.text-container {
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Arrondir les bords */
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif; /* Police pour le nom */
+    font-size: 58px; /* Taille du texte */
+     font-weight: 732px ;
+    color: #622582; /* Couleur du texte */
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+.title {
+    font-family: 'Lato', sans-serif; /* Police pour le titre */
+    font-size: 50px; /* Taille du texte */
+    font-weight: 500; /* Semi-bold */
+    color: #622582; /* Couleur du texte */
+    margin: 15px 0; /* Espacement entre le nom et le titre */
+}
+
+.social-icons {
+    display: flex; /* Affiche les icônes horizontalement */
+    gap: 20px; /* Espacement entre les icônes */
+    margin-top: 15px; /* Espacement entre le titre et les icônes */
+}
+
+.icon img {
+    width: 44px; /* Taille des icônes */
+    height: auto; /* Conserve le ratio */
+    display: block; /* Enlève l'espace en bas */
+}
+.about {
+    text-align: center; /* Centre le contenu */
+    margin: 90px 0; /* Ajoute de l'espace en haut et en bas de la section */
+}
+
+.line {
+    width: 100%; /* Largeur de la ligne */
+    height: 1px; /* Épaisseur de la ligne */
+    background-color: rgba(98, 37, 130, 0.57); /* Couleur avec opacité */
+    margin: 0 auto; /* Centre la ligne */
+}
+
+.about-box {
+    background-color: #FFFFFF; /* Couleur de fond blanche */
+    display: inline-block; /* Permet de centrer le carré */
+    padding: 3px 10px; /* Ajoute de l'espace autour du texte */
+    margin-top: -40px; /* Espace entre la ligne et le carré */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour le relief */
+}
+
+.about-title {
+    color: #622582; /* Couleur du texte */
+    font-family: 'Montserrat', sans-serif; /* Police Montserrat */
+    font-weight: 800; /* Équivalent à Extra Bold */
+    font-size: 40px; /* Taille de la police */
+    margin: 0; /* Retire les marges par défaut */
+}
+
